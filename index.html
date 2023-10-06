@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrawingsMachines</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Logo de la empresa a la izquierda -->
+        <div class="logo">DrawingsMachines</div>
+
+        <!-- Icono de menú para dispositivos móviles -->
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+
+        <!-- Menú de navegación a la derecha -->
+        <nav>
+            <ul>
+                <li><a href="#inicio">Regístrate</a></li>
+                <li><a href="#quien-soy">Ingresa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Sección Hero -->
+    <section class="hero">
+
+        <!-- Animación arriba en dispositivos móviles -->
+        <div class="hero-animation">
+            <!-- Puedes agregar tu contenido animado aquí 
+            <img src="https://w7.pngwing.com/pngs/979/966/png-transparent-pencil-cartoon-cartoon-pencil-cartoon-character-food-color-pencil-thumbnail.png"
+                alt="Animación"> -->
+
+            <div class="line-container">
+                <div class="diagonal-line-celeste-top"></div>
+                <div class="horizontal-line-top"></div>
+                <div class="diagonal-line-blue-top"></div>
+                <div class="diagonal-line-blue-bottom"></div>
+                <div class="diagonal-line-celeste-bottom"></div>
+                <div class="horizontal-line-bottom"></div>
+                <div class="ring-bottom"></div>
+                <div class="ring-top"></div>
+            </div>
+
+        </div>
+
+        <!-- Título en el centro -->
+        <div class="hero-title">
+            <h3>¿Te gustaría tener tus planos eléctricos<br>
+                <span class="typed-output"></span><br>en minutos?
+            </h3>
+            <!-- Botón debajo del título -->
+            <button class="hero-button">Regístrate aquí<class="nav__img"></button>
+        </div>
+
+        <script>
+            var options = {
+                strings: ["sin errores", "estandarizados" , "sin uso de software", "carbononeutrales"],
+                typeSpeed: 50, // Velocidad de escritura en milisegundos por carácter
+                backSpeed: 75, // Velocidad de retroceso en milisegundos por carácter
+                loop: true // Hacer que la animación se repita en un bucle
+            };
+
+            var typed = new Typed(".typed-output", options);
+        </script>
+
+    </section>
+
+    <section>
+        <div class="container-quienes">
+            <div style="text-align: center;">
+                <img src="./iconos/iconos DM-06.png" style="width: 10%; height: auto;">
+
+            </div>
+            <div style="text-align: center;">
+
+                <img src="./iconos/iconos DM-05.png" style="width: 10%; height: auto;">
+
+            </div>
+            <h2 style="text-align: center;">¿QUIÉNES SOMOS?</h2>
+            <p style="text-align: center;">
+                Primer servicio colaborativo desarrollado por especialistas del dibujo</p>
+            <p style="text-align: center;">
+                estructural, mecánico, eléctrico y sanitario</p>
+            <p style="text-align: center;">
+                para profesionales y licenciados SEC.</p>
+        </div>
+
+    </section>
+
+    <section class="category-section">
+        <!-- Tarjeta para "Diseño Web" -->
+        <div class="category-card"  style="background-color: #33ffff;">
+
+            <a href="#modal1">Plano TE1 Definitivo</a>
+
+
+            <div id="modal1" class="modalmask">
+                <div class="modalbox movedown" >
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Plano TE1 Definitivo</h2>
+                    <p>La ventana modal aparece por arriba y se desliza hasta su posición. Un efecto simple pero
+                        elegante.</p>
+                    <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Tarjeta para "Desarrollo Web" -->
+        <div class="category-card"  style="background-color: #33ccff;">
+
+            <a href="#modal2">Plano TE1 Provisorio</a>
+
+
+            <div id="modal2" class="modalmask">
+                <div class="modalbox movedown">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Plano TE1 Provisorio</h2>
+                    <p>La ventana modal aparece por arriba y se desliza hasta su posición. Un efecto simple pero
+                        elegante.</p>
+                    <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Tarjeta para "Desarrollo de Apps" -->
+        <div class="category-card" style="background-color: #3399ff;">
+
+            <a href="#modal3">Plano TE1 Comercial</a>
+
+
+            <div id="modal3" class="modalmask">
+                <div class="modalbox movedown">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Plano TE1 Comercial</h2>
+                    <p>La ventana modal aparece por arriba y se desliza hasta su posición. Un efecto simple pero
+                        elegante.</p>
+                    <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta para "Desarrollo WordPress" -->
+        <div class="category-card" style="background-color: #3366ff;">
+
+            <a href="#modal4">Modelos TE2 Lumínicos</a>
+
+
+            <div id="modal4" class="modalmask">
+                <div class="modalbox movedown">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Modelos TE2 Lumínicos</h2>
+                    <p>La ventana modal aparece por arriba y se desliza hasta su posición. Un efecto simple pero
+                        elegante.</p>
+                    <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Tarjeta para "Desarrollo WordPress" -->
+        <div class="category-card" style="background-color: #3366cc;">
+
+            <a href="#modal5">Plano aumento de potencia</a>
+
+
+            <div id="modal5" class="modalmask">
+                <div class="modalbox movedown">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Plano aumento de potencia</h2>
+                    <p>La ventana modal aparece por arriba y se desliza hasta su posición. Un efecto simple pero
+                        elegante.</p>
+                    <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta para "Marketing Digital" -->
+        <div class="category-card"style="background-color: #3399cc;">
+
+            <a href="#modal6">Otros</a>
+
+
+            <div id="modal6" class="modalmask">
+                <div class="modalbox movedown">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Otros</h2>
+                    <p>La ventana modal aparece por arriba y se desliza hasta su posición. Un efecto simple pero
+                        elegante.</p>
+                    <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <h3 style="display: flex; text-align: center; justify-content: center;">Galería</h3>
+
+    <section class="gallery-section">
+        <!-- Imagen 1 - Proyecto 1 -->
+
+        
+
+        <div>
+            <a href="#" class="project-link">Proyecto 1</a>
+            <img src="./images/imgs/adialux.jpg" alt="Proyecto 1" class="project-image">
+        </div>
+
+        <!-- Imagen 2 - Proyecto 2 -->
+        <div>
+            <a href="#" class="project-link">Proyecto 2</a>
+            <img src="./images/imgs/unilineal.jpg" alt="Proyecto 2" class="project-image">
+        </div>
+
+        <!-- Imagen 3 - Proyecto 3 -->
+        <div>
+            <a href="#" class="project-link">Proyecto 3</a>
+            <img src="./images/imgs/bim-domic.jpg" alt="Proyecto 3" class="project-image">
+        </div>
+
+        <!-- Imagen 4 - Proyecto 4 -->
+        <div>
+            <a href="#" class="project-link">Proyecto 4</a>
+            <img src="./images/imgs/cuadroc.jpg" alt="Proyecto 4" class="project-image">
+        </div>
+
+                <!-- Imagen 5 - Proyecto 5 -->
+                <div>
+                    <a href="#" class="project-link">Proyecto 4</a>
+                    <img src="./images/imgs/5.jpeg" alt="Proyecto 4" class="project-image">
+                </div>
+
+                        <!-- Imagen 6 - Proyecto 6 -->
+        <div>
+            <a href="#" class="project-link">Proyecto 4</a>
+            <img src="./images/imgs/6.jpeg" alt="Proyecto 4" class="project-image">
+        </div>
+
+
+
+                <!-- Imagen 7 - Proyecto 7 -->
+                <div>
+                    <a href="#" class="project-link">Proyecto 4</a>
+                    <img src="./images/imgs/7.jpeg" alt="Proyecto 4" class="project-image">
+                </div>
+
+        <!-- Imagen 8 - Proyecto 8 -->
+        <div>
+            <a href="#" class="project-link">Proyecto 4</a>
+            <img src="./images/imgs/8.jpeg" alt="Proyecto 4" class="project-image">
+        </div>
+
+
+
+                <!-- Imagen 9 - Proyecto 9 -->
+                <div>
+                    <a href="#" class="project-link">Proyecto 4</a>
+                    <img src="./images/imgs/9.jpeg" alt="Proyecto 4" class="project-image">
+                </div>
+
+
+
+                        <!-- Imagen 10 - Proyecto 10 -->
+        <div>
+            <a href="#" class="project-link">Proyecto 4</a>
+            <img src="./images/imgs/10.jpeg" alt="Proyecto 4" class="project-image">
+        </div>
+
+
+                <!-- Imagen 11 - Proyecto 11 -->
+                <div>
+                    <a href="#" class="project-link">Proyecto 4</a>
+                    <img src="./images/imgs/11.jpeg" alt="Proyecto 4" class="project-image">
+                </div>
+        
+                        <!-- Imagen 12 - Proyecto 12 -->
+        <div>
+            <a href="#" class="project-link">Proyecto 4</a>
+            <img src="./images/imgs/12.jpeg" alt="Proyecto 4" class="project-image">
+        </div>
+    </section>
+
+
+
+
+
+
+    <!--carrusel-->
+
+    <div class="pic-ctn">
+        <img src="https://picsum.photos/200/300?t=1" alt="" class="pic">
+        <img src="https://picsum.photos/200/300?t=2" alt="" class="pic">
+        <img src="https://picsum.photos/200/300?t=3" alt="" class="pic">
+        <img src="https://picsum.photos/200/300?t=4" alt="" class="pic">
+        <img src="https://picsum.photos/200/300?t=5" alt="" class="pic">
+    </div>
+
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger project-id="chatbot-drawingsmachines" agent-id="5c6b15d5-d7b7-4eb9-8cf1-81ecbd56fe30"
+        language-code="es">
+        <df-messenger-chat-bubble chat-title="DM-chat">
+        </df-messenger-chat-bubble>
+    </df-messenger>
+    <style>
+        df-messenger {
+            z-index: 999;
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+        }
+    </style>
+
+
+
+
+    <script>
+        // JavaScript para mostrar/ocultar el menú en dispositivos móviles al hacer clic en el icono
+        const menuIcon = document.getElementById('menu-icon');
+        const navUl = document.querySelector('nav ul');
+
+        menuIcon.addEventListener('click', () => {
+            navUl.classList.toggle('show-menu');
+        });
+    </script>
+
+
+</body>
+
+<footer>
+    <img src="./images/imgs/path5845.png">
+
+    
+</footer>
+
+</html>

@@ -1,0 +1,821 @@
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+
+/* Estilos CSS para el header */
+header {
+
+
+  background-color: #333;
+  /* Color de fondo del header */
+  color: #fff;
+  /* Color de texto del header */
+  padding: 10px 0;
+  /* Espaciado interno del header */
+  display: flex;
+  /* Usa flexbox para alinear elementos */
+  justify-content: space-between;
+  /* Alinea los elementos al inicio y al final */
+  align-items: center;
+  /* Alinea verticalmente los elementos al centro */
+
+
+}
+
+/* Estilos para el logo */
+.logo {
+
+  margin-left: 20px;
+  /* Margen izquierdo para separar del borde */
+  font-size: 24px;
+  /* Tamaño de fuente del logo */
+}
+
+/* Estilos para el menú de navegación en dispositivos móviles */
+.menu-icon {
+
+  display: none;
+  /* Oculta el icono de menú por defecto */
+  cursor: pointer;
+  /* Cambia el cursor a un puntero */
+  font-size: 24px;
+  /* Tamaño de fuente del icono de menú */
+  margin-right: 20px;
+  /* Margen derecho para alinear a la derecha */
+
+}
+
+/* Estilos para el menú de navegación en dispositivos móviles */
+nav ul {
+  list-style: none;
+  /* Quita las viñetas de la lista */
+  display: flex;
+  /* Usa flexbox para los elementos de la lista */
+  margin: 0;
+  /* Quita el margen en dispositivos móviles */
+  padding: 0;
+  /* Quita el padding en dispositivos móviles */
+
+}
+
+nav li {
+  margin-right: 20px;
+  /* Espaciado entre elementos del menú */
+  padding: 10px 0;
+  /* Añade padding vertical a los elementos del menú */
+}
+
+/* Estilos para los enlaces del menú */
+nav a {
+  text-decoration: none;
+  /* Quita la decoración de enlace */
+  color: #fff;
+  /* Color de texto de los enlaces */
+  font-weight: bold;
+  /* Texto en negrita */
+}
+
+/* Estilos para el menú de navegación en dispositivos móviles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    /* Muestra el icono de menú en dispositivos móviles */
+    margin-left: auto;
+    /* Alinea a la derecha en dispositivos móviles */
+  }
+
+  nav ul {
+    display: none;
+    /* Oculta el menú de navegación en dispositivos móviles */
+    flex-direction: column;
+    /* Muestra los elementos en una columna */
+    position: absolute;
+    /* Posición absoluta para superponer */
+    top: 60px;
+    /* Espacio desde la parte superior */
+    right: 0;
+    /* Alinea a la derecha en dispositivos móviles */
+    background-color: #333;
+    /* Color de fondo del menú desplegable */
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    /* Centra el texto */
+    padding-left: 15px;
+    margin-right: 8px;
+  }
+
+  nav ul.show-menu {
+    display: flex;
+    /* Muestra el menú cuando la clase show-menu está presente */
+  }
+
+  header {
+    padding: 10px 0;
+    /* Espaciado interno del header en dispositivos móviles */
+  }
+
+
+  .logo {
+    font-size: 20px;
+
+    /* Tamaño de fuente del logo en dispositivos móviles */
+  }
+
+  .hero-animation {
+    transform: scale(0.5) translateY(-200px) translateX(-100px);
+
+  }
+}
+
+/* Estilos CSS para la sección Hero */
+.hero {
+
+  background-color: linear-gradient(45deg, #CFDFED, #BCBEDA);
+  /* Color de fondo de la sección Hero */
+  color: red;
+  /* Color de texto en la sección Hero */
+  display: flex;
+  /* Usa flexbox para alinear elementos */
+  justify-content: space-between;
+  /* Alinea elementos al inicio y al final */
+  align-items: start;
+  /* Alinea verticalmente al centro */
+  padding: 50px;
+  /* Espaciado interno de la sección Hero */
+  height: 80vh;
+
+
+}
+
+.typed-output {
+  margin: 0;
+  padding: 0;
+  color: red;
+}
+
+.hero-title {
+  flex: 1;
+  /* Toma el espacio restante disponible */
+  font-size: 36px;
+  /* Tamaño de fuente del título */
+  opacity: 0;
+  /* Inicialmente oculto */
+  animation: fadeIn 2s ease forwards;
+  /* Animación CSS para el título */
+  text-align: start;
+  padding-right: 150px;
+  padding-left: 0;
+  color: black;
+}
+
+.hero-animation {
+  position: relative;
+  flex: 1 1;
+  display: block;
+  margin-top: 150px;
+  /*transform: translateX(100px);*/
+  margin-left: 150px;
+
+
+
+
+  /*Toma el espacio restante disponible.funciona en imagenes */
+}
+
+/* 
+.hero-animation img {
+    max-width: 50%;
+    Asegura que la imagen no se desborde 
+} */
+
+
+/*logo animado*/
+
+.line-container {
+  display: block;
+  position: relative;
+  width: 200px;
+  color: black;
+  margin: 0 0 0 200px;
+
+
+
+}
+
+.typed-output {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.horizontal-line-top {
+  position: relative;
+  visibility: hidden;
+  width: 75%;
+  height: 15px;
+  background-color: #000080;
+  margin: 0;
+  border-radius: 50px;
+  left: 150px;
+  top: -15px;
+  animation: trazado-blue-corto 3s linear 2.5s forwards;
+  transform: rotate(180deg);
+  transform-origin: 0% 100%;
+
+
+}
+
+.horizontal-line-bottom {
+  position: absolute;
+  visibility: hidden;
+  border-radius: 50px;
+  top: 85px;
+  right: 315px;
+  width: 75%;
+  height: 15px;
+  transform: rotate(180deg);
+  transform-origin: 100% 0%;
+  background-color: #000080;
+  margin: 0;
+
+  animation: trazado-blue-corto 3s linear 2.5s forwards;
+
+
+
+
+
+}
+
+.ring-top {
+  position: absolute;
+  top: -174px;
+  right: 124px;
+  width: 30px;
+  height: 30px;
+  border: 15px solid #000080;
+  border-radius: 50%;
+
+}
+
+.ring-bottom {
+  position: absolute;
+  top: 190px;
+  right: 175px;
+  width: 30px;
+  height: 30px;
+  border: 15px solid #000080;
+  border-radius: 50%;
+}
+
+.diagonal-line-blue-top {
+  width: 120%;
+  height: 15px;
+  background-color: #000080;
+  position: absolute;
+  transform: rotate(-55deg);
+  transform-origin: 0% 100%;
+  top: 190px;
+  left: 15px;
+  border-radius: 50px;
+  animation: trazado-blue 3s linear 1;
+}
+
+.diagonal-line-blue-bottom {
+  width: 130%;
+  height: 15px;
+  background-color: #000080;
+  position: absolute;
+  transform: rotate(125deg);
+  transform-origin: 0% 100%;
+  top: -150px;
+  left: 30px;
+  border-radius: 50px;
+  animation: trazado-blue 3s linear 1;
+}
+
+.diagonal-line-celeste-top {
+  width: 72%;
+  height: 15px;
+  background-color: #5dade2;
+  position: absolute;
+  transform: rotate(105deg);
+  transform-origin: 0% 100%;
+  top: -145px;
+  left: 50px;
+  border-radius: 50px;
+
+  animation: trazado 3s linear 1;
+}
+
+.diagonal-line-celeste-bottom {
+  width: 68%;
+  height: 15px;
+  background-color: #5dade2;
+  position: absolute;
+  transform: rotate(-75deg);
+  transform-origin: 0% 100%;
+  top: 192px;
+  left: -10px;
+  border-radius: 50px;
+  animation: trazado 3s linear 1;
+}
+
+@keyframes trazado {
+  0% {
+    width: 0;
+
+    /* Sin ancho al principio */
+  }
+
+  100% {
+    width: 72%;
+    /* Ancho completo al final */
+  }
+}
+
+@keyframes trazado-blue {
+  0% {
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    /* Sin ancho al principio */
+  }
+
+  100% {
+    width: 122%;
+    visibility: visible;
+    opacity: 1;
+
+    /* Ancho completo al final */
+  }
+}
+
+@keyframes trazado-blue-corto {
+  0% {
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    /* Sin ancho al principio */
+  }
+
+  100% {
+    width: 72%;
+    visibility: visible;
+    opacity: 1;
+
+    /* Ancho completo al final */
+  }
+}
+
+/*fin logo animado*/
+
+.hero-button {
+  margin-top: 20px;
+  /* Espaciado superior del botón */
+  background-color: #007BFF;
+  /* Color de fondo del botón */
+  color: white;
+  /* Color de texto del botón */
+  padding: 10px 20px;
+  /* Espaciado interno del botón */
+  border: none;
+  /* Quita el borde del botón */
+  border-radius: 35px;
+  /* Borde redondeado del botón */
+  font-size: 18px;
+  /* Tamaño de fuente del botón */
+  cursor: pointer;
+  /* Cambia el cursor a un puntero */
+  display: inline-block;
+  /* Hace que el botón sea un bloque para centrarlo */
+  margin-left: auto;
+  /* Centra el botón horizontalmente */
+  margin-right: auto;
+  /* Centra el botón horizontalmente */
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 5px blue;
+
+
+}
+
+
+.nav__img {
+
+  width: 30px;
+  margin-left: 10px;
+}
+
+/* Animación de entrada (fadeIn) */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    /* Hace que el elemento sea visible */
+  }
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    /* Cambia la dirección de los elementos en dispositivos móviles */
+    text-align: center;
+    /* Centra el texto */
+  }
+
+  .hero-title {
+    font-size: 24px;
+    /* Tamaño de fuente del título en dispositivos móviles */
+  }
+
+  .hero-animation {
+    width: 100%;
+    /* Ancho completo en dispositivos móviles */
+    order: -1;
+    /* Cambia el orden para que la imagen esté arriba */
+  }
+}
+
+/* Estilos CSS para la sección de categorías */
+.category-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  /* Columnas automáticas con ancho mínimo de 200px */
+  gap: 20px;
+  /* Espaciado entre las tarjetas */
+  padding: 20px;
+}
+
+/* Estilos CSS para las tarjetas */
+.category-card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  /* Transición de color de fondo */
+}
+
+.category-card a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Cambia el color de fondo al pasar el mouse sobre la tarjeta */
+.category-card:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .category-section {
+    grid-template-columns: repeat(2, 1fr);
+    /* Cambia a 2 columnas en dispositivos móviles */
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Estilos CSS para la sección de la galería */
+.gallery-section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  /* Columnas automáticas con ancho mínimo de 200px */
+
+  gap: 20px;
+  /* Espaciado entre las imágenes */
+  padding: 20px;
+
+}
+
+
+@media (max-width: 768px) {
+  .gallery-section {
+    grid-template-columns: repeat(1, 1fr);
+    /* Cambia a 2 columnas en dispositivos móviles */
+  }
+}
+
+/* Estilos CSS para las imágenes */
+.project-image {
+  width: 300px;
+  height: 200px;
+  align-items: stretch;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+
+}
+
+/* Estilos CSS para los enlaces de proyecto */
+.project-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  /* Espaciado superior entre el enlace y la imagen */
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos CSS para el footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+/* Estilos CSS para la primera columna */
+.column-1 {
+  grid-column: 1;
+  text-align: left;
+}
+
+/* Estilos CSS para la segunda columna */
+.column-2 {
+  grid-column: 2;
+}
+
+/* Estilos CSS para la tercera columna */
+.column-3 {
+  grid-column: 3;
+}
+
+/* Estilos CSS para la cuarta columna */
+.column-4 {
+  grid-column: 4;
+}
+
+/* Estilos CSS para los iconos de redes sociales */
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Estilos CSS para los enlaces */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Estilos CSS para los iconos de redes sociales en dispositivos móviles */
+@media (max-width: 768px) {
+  .column-4 {
+    grid-column: span 4;
+    /* Ocupa 4 columnas completas en dispositivos móviles */
+  }
+}
+
+/* Estilos CSS para los iconos de redes sociales */
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Estilos CSS para los enlaces */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/*carrusel*/
+
+.pic-ctn {
+  width: 400vw;
+  height: 200px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+
+.pic-ctn>img {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+
+img:nth-child(5) {
+  animation-delay: 8s;
+}
+
+
+
+
+/*modal*/
+
+/*Efecto*/
+.modalmask {
+  position: fixed;
+  font-family: Arial, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modalmask:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/*Formato de la ventana*/
+.modalbox {
+  color: black;
+  width: 400px;
+  position: relative;
+  padding: 5px 20px 13px 20px;
+  background: #fff;
+  border-radius: 3px;
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+
+}
+
+/*Movimientos*/
+.movedown {
+  margin: 0 auto;
+}
+
+.rotate {
+  margin: 10% auto;
+  -webkit-transform: scale(-5, -5);
+  transform: scale(-5, -5);
+}
+
+.resize {
+  margin: 10% auto;
+  width: 0;
+  height: 0;
+
+}
+
+.modalmask:target .movedown {
+  margin: 10% auto;
+}
+
+.modalmask:target .rotate {
+  transform: rotate(360deg) scale(1, 1);
+  -webkit-transform: rotate(360deg) scale(1, 1);
+}
+
+.modalmask:target .resize {
+  width: 400px;
+  height: 200px;
+}
+
+/*Boton de cerrar*/
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: 1px;
+  text-align: center;
+  top: 1px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+
+}
+
+.close:hover {
+  background: #FAAC58;
+  color: #222;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+
+
+/*animaciones imagenes css*/
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+
+img  {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}

@@ -1,0 +1,38 @@
+<!-- Columna 1: Nombre de la empresa y descripción -->
+    <div class="column-1">
+        <h3>DrawingsMachines</h3>
+        <p>"Convertimos horas en minutos"</p>
+    </div>
+
+    <!-- Columna 2: Lista de enlaces de servicios -->
+    <div class="column-2">
+        <h3>Servicios</h3>
+        <ul>
+            <li><a href="#">Servicio 1</a></li>
+            <li><a href="#">Servicio 2</a></li>
+            <li><a href="#">Servicio 3</a></li>
+            <!-- Agrega más enlaces de servicios si es necesario -->
+        </ul>
+    </div>
+
+    <!-- Columna 3: Lista de enlaces de proyectos -->
+    <div class="column-3">
+        <h3>Proyectos</h3>
+        <ul>
+            <li><a href="#">Proyecto 1</a></li>
+            <li><a href="#">Proyecto 2</a></li>
+            <li><a href="#">Proyecto 3</a></li>
+            <!-- Agrega más enlaces de proyectos si es necesario -->
+        </ul>
+    </div>
+
+    <!-- Columna 4: Iconos de redes sociales -->
+    <div class="column-4">
+        <h3>Redes Sociales</h3>
+        <div class="social-icons">
+            <a href="#"><i class="social-icon">YouTube</i></a>
+            <a href="#"><i class="social-icon">LinkedIn</i></a>
+            <a href="#"><i class="social-icon">Facebook</i></a>
+            <a href="#"><i class="social-icon">Instagram</i></a>
+        </div>
+    </div>
